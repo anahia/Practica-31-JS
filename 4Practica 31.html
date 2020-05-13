@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<!--esta es mi practica 31-->
+
+<head>
+    <title>Practica 31</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        //problema 1//
+
+        function verificacion(control) {
+            if (control.value.length < 7 || control.value.length > 20) {
+                alert('Debe ingresar una clave con minimo 7 caracteres y maximo 20.');
+            }
+        }
+    </script>
+    <form>
+        Ingrese su nombre de usuario:
+        <input type="text" id="usuario">
+        <br> Ingrese su clave:
+        <input type="password" id="clave" onBlur="verificacion(This)">
+        <br>
+        <input type="button" value="Verificar">
+    </form>
